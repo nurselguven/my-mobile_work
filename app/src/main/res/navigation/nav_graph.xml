@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination ="@id/homeFragment"
+    >
+<fragment
+    android:id="@+id/homeFragment"
+    android:name="come.codinginflow.navigationcomponentturiol.HomeFragment"
+    android:label="fragment_home"
+    tools:layout="@layout/fragment_home"
+    >
+    <action
+        android:id="@+id/action_homeFragment_to_loginFragment3"
+        app:destination="@id/loginFragment" />
+</fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.nursel.mobile_work.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.nursel.mobile_work.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
+
+
+</navigation>
